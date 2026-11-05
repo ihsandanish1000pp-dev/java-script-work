@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Pop Method</h1>
+
+    <button onclick="removeProduct()">Remove list item</button>
+    <div id="result"></div>
+</body>
+
+
+<script>
+
+    //   let i  = ['Ihsan' , 'Danish' , 'Khan' , 'Bangsh ' ,];
+
+    //    i.pop();
+    //    document.write(i);
+
+
+
+    //  let product = ['Mobile' , 'Keyboard' , 'Mouse' , 'laptop'];
+
+    //   product.pop()
+    //   document.write(product);
+
+    // let product = ['Mobile', 'Mouse', 'Keyborad', 'Laptop'];
+    // product.pop()
+    // for (let i = 0; i < product.length; i++) {
+    //     document.write((i + 1) + " : " + product[i] + "<br/>");
+    // }
+
+
+
+
+
+
+
+    let list = ['Ihsan', 'Danihs', 'Usmna', 'Sami', 'Nasirrr', 'Kashif'];
+
+
+    function showProducts() {
+        let output = ''
+        for (let i = 0; i < list.length; i++) {
+         output += (i + 1) + " : " + list[i] + "<br/>";
+        }
+
+         document.getElementById('result').innerHTML = output;
+    }
+
+
+    function removeProduct(){
+         list.pop();
+         showProducts()
+    }
+
+    showProducts()
+</script>
+
+</html>

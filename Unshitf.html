@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h2> Unshift !!</h2> -->
+</body>
+
+
+
+<script>
+
+       let i = ['Ihsan' , 'Danihs' , 'Khan'];
+       i.unshift('Mubrik');
+       document.write(i.join('<br/>'));
+
+
+
+    let student = ['Ihsan', 'Danihs', 'Khan', 'Sami'];
+    let std = '';
+    student.unshift('Ali');
+    student.unshift('Ahmad');
+    for (let i = 0; i < student.length; i++) {
+        std += (i + 1) + " : " + student[i] + "<br/>";
+    }
+    document.write(std);
+    document.write(`Total Student : ` + student.length)
+</script>
+
+</html>

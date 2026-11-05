@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Bank Queue System</h2>
+
+    <!-- <button onclick="serveCustomer()"> Serve Next Customer </button> -->
+    <button onclick="CustomerOrder()"> customer order </button>
+    <div id="result"></div>
+
+    <script>
+        // let customers = ['Ihsan', 'Danish', 'Usman', 'Sami'];
+
+        // function showCustomers() {
+        //     let output = '';
+
+        //     for (let i = 0; i < customers.length; i++) {
+        //         output += (i + 1) + ' : ' + customers[i] + '<br/>';
+        //     }
+
+        //     document.getElementById('result').innerHTML = output;
+        // }
+
+        // function serveCustomer() {
+        //     customers.shift();
+        //     showCustomers();
+        // }
+
+        // showCustomers();
+
+
+
+
+
+
+
+        //  let order = ['Burger' , 'Pizz' , 'Baryni' , 'Zinger Barger' , 'White checken'];
+
+        //   function showOrder(){
+        //      let pinding = '';
+
+        //      for( let i = 0 ; i< order.length ; i++ ){
+        //         pinding += (i+1) + " : " + order[i] + "<br/>";
+        //      }
+
+        //      document.getElementById('result').innerHTML = pinding;
+        //   }
+
+        //   function CustomerOrder(){
+        //     order.shift();
+        //     showOrder()
+        //   }
+        //   showOrder();
+
+
+
+
+
+        let order = ['Pizz', 'Burgar', 'Zinger Burgar', 'White Checken'];
+
+        function showOrder() {
+            let pinding = ''
+
+            for (let i = 0; i < order.length; i++) {
+
+                pinding += (i + 1) + " : " + order[i] + "<br/>";
+            }
+
+            document.getElementById('result').innerHTML = pinding;
+        }
+
+        function CustomerOrder() {
+            order.shift();
+            showOrder();
+        }
+
+        showOrder();
+
+    </script>
+
+</body>
+
+</html>

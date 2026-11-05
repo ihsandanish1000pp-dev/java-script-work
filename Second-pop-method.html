@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>My Shopping Cart</h2>
+
+    <button onclick="removeProduct()">Remove Last Product</button>
+
+    <div id="result"></div>
+
+    <script>
+        let cart = ['Laptop', 'Mobile', 'Keyboard', 'Mouse'];
+
+        function showProducts() {
+            let output = '';
+
+            for (let i = 0; i < cart.length; i++) {
+                output += (i + 1) + ' : ' + cart[i] + '<br/>';
+            }
+
+            document.getElementById('result').innerHTML = output;
+        }
+
+        function removeProduct() {
+            cart.pop();
+            showProducts();
+        }
+
+        showProducts();
+    </script>
+
+</body>
+
+</html>
