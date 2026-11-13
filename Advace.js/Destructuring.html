@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Destructuring</h1>
+</body>
+
+
+
+<script>
+
+
+
+
+
+    //   let  student = {
+
+    //        Name : 'Ihsan',
+    //        Age : 23,
+    //        Gender : 'Male'
+    //   };
+
+    //    let name = student.Name;
+    //    let Age = student.Age;
+    //    let Gender = student.Gender;
+    //    document.write(name);
+    //    document.write(name);
+    //    document.write(name);
+    //    document.write(naem)
+    // }
+
+
+
+
+    // let student = {
+
+    //     Name: 'Ihsan',
+    //     Age: 25,
+    // }
+
+    // let = { Name, Age } = student;
+    // document.write(Name , Age);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let person = {
+
+    //     Name: 'Danihs',
+    //     age: 33,
+    // }
+
+    // let = { Name, age } = person;
+    // document.write(Name, age);
+
+
+
+
+
+    //   let person = {
+
+    //       Name : 'Ihsan',
+    //       age : 24,
+    //       Gender: 'Male',
+    //       DOB : '15/2/2003',
+    //   }
+
+    //    let {Name,age,Gender,DOB}=person;
+    //    document.write(Name + "<br/>" ,age + "<br/>"  ,Gender  + "<br/>"  , DOB)
+
+
+
+
+    // let employee = {
+
+    //     Name: 'Ihsan',
+    //     age: 25,
+    //     Gender: 'Male',
+    //     city: 'Rawalpidi',
+    //     skill: 'Java script',
+    // }
+
+
+    // let { Name, age, Gender, city, skill } = employee;
+    // document.write(Name  + "</br>" , age + "</br>" , Gender + "</br>" , city + "</br>"  , skill);
+
+
+
+
+    // let product = {
+
+    //     productName: 'Laptop',
+    //     price: 120000,
+    //     brand: 'HP',
+    //     category: 'Electronics'
+    // }
+
+
+    //  let {productName , price} = product;
+
+    //   document.write(productName + "<br>" ,price );
+
+
+
+
+
+
+    let user = {
+
+        Name: 'Ihsan',
+        FName: 'Muhammad Tariq',
+        Gender: 'Male',
+        DOF: '15/2/2003',
+    }
+
+    let { Name, FName, Gender, DOF } = user;
+
+    document.write(
+        `
+              <div class = 'std'>
+                  
+                   <h2> Name : ${Name} </h2>
+                    <p> F/Name : ${FName}<p>
+                     <p> Gender : ${Gender}<p>   
+                    <p> D/O/F : ${DOF}<p>
+                </div>
+          `
+    )
+</script>
+
+</html>

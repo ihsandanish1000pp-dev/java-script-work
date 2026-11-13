@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+
+    <style>
+        body {
+            background-color: #f1f5f9;
+            font-family: Arial, sans-serif;
+            padding: 30px;  
+            display: flex;
+        }
+
+        .student {
+            background-color: white;
+            width: 250px;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid blue;
+
+        }
+
+        .student h2 {
+            color: blue;
+            margin-top: 0;
+        }
+
+        .student p {
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let studentList = [
+
+            {
+                Name: 'Ihsan',
+                FName: 'Muhammad Tariq',
+                DOB: '2003',
+                Gender: 'Male'
+            },
+
+            {
+                Name: 'Danihs',
+                FName: 'Akhtar Zadin',
+                DOB: '2005',
+                Gender: 'Male'
+            },
+
+            {
+                Name: 'Asif',
+                FName: 'Hanif',
+                DOB: '2009',
+                Gender: 'Male'
+            },
+
+            {
+                Name: 'Ahmad',
+                FName: 'Muhammad Tariq',
+                DOB: '2015',
+                Gender: 'Male'
+            },
+        ];
+
+        function list() {
+
+            studentList.forEach(function (item) {
+
+                document.write(`
+                    <div class="student">
+
+                        <h2>${item.Name}</h2>
+
+                        <p>Father Name: ${item.FName}</p>
+                        <p>DOB: ${item.DOB}</p>
+                        <p>Gender: ${item.Gender}</p>
+
+                    </div>
+                `);
+
+            });
+
+        }
+
+        list();
+    </script>
+
+</body>
+</html>

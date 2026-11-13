@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Array Destructuring</h3>
+</body>
+
+
+<script>
+
+
+
+    // let fruits = ['Apple','Mango','Banan','PinApple'];
+    // let [fruit1,fruit2,fruit3,fruit4] = fruits;
+    // document.write(fruit1);
+    // document.write(fruit2);
+    // document.write(fruit3);
+    // document.write(fruit4);
+
+
+    //    let list = ['Ihsan', 'Danihs', 'Khan', 'Bangash'];
+
+    //      let = [ name1,name2,name3,name4 ] = list;
+
+    //         document.write(name1);
+    //         document.write(name2);
+    //         document.write(name3);
+    //         document.write(name4);
+
+
+
+
+    // let list = ['Ihsan', 'Danihs', 'Khan', 'Bangash', 'Noman'];
+
+    // let [name1, name2, name3, name4, name5] = list;
+
+
+    // document.write(name1 + "<br>"   ,name2 + "<br>" ,name3 + "<br>",name4  + "<br>" ,name5);
+
+
+
+
+    // let list = ['Ihsan', 'Danihs', 'Khan', 'Bangash', 'Nasir'];
+
+    // let [name1, name2, name3, name4, name5] = list;
+
+    // document.write(
+    //     name1 + "<br>" +
+    //     name2 + "<br>" +
+    //     name3 + "<br>" +
+    //     name4 + "<br>" +
+    //     name5 + "<br>"
+    // )
+
+
+
+
+
+    // let order = [
+
+    //     'Dell Laptop',
+    //     20000,
+    //     2,
+    //     'islambad'
+    // ]
+
+
+    // let [product, price, quntity, city] = order;
+
+    // document.write(
+    //     `
+    //         <div class = 'std'>
+    //                  <h2> Name: ${product}<h2/>
+    //                     <p> price : ${price}<p/>
+    //                       <p> Quntity : ${quntity}<p/>
+    //                         <p> city : ${city}<p/>  
+    //             <div/>
+    //     `
+    // )
+
+
+//    let order = [
+
+//        'Laptop',
+//        2000,
+//        1,
+//        'islmabad',
+//    ]
+
+
+//     let [ product,price,quntity,city]=order;
+
+//     document.write(
+//         `
+//             <div class = "student">
+//                    <h3> Name : ${product}</h3>
+//                     <p> Price : ${price}</p>
+//                      <p> Quntity : ${quntity}</p>
+//                       <p> city : ${city}</p>     
+//                 </div>
+//         `
+//     )
+
+
+
+
+
+   
+   let order = [
+
+        ' samsung Mobile',
+        2000,
+        3,
+   ]
+
+
+   let [product,price,quntity] = order;
+   let total = price*quntity;
+
+    document.write(
+           `
+                <h2> Name : ${product}</h2>
+                <p>price : ${price}</p>
+                <p> quntity : ${quntity}</p>
+                <h3> Total : ${total}</h3>
+           `
+    )
+</script>
+
+</html>

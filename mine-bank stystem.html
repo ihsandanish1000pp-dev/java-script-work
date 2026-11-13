@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank Account Project</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            max-width: 350px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 7px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #101c36, #1c3154);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .box {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 35px 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .box h2 {
+            color: #172b4d;
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .box h3:first-of-type {
+            color: #64748b;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .box h3:nth-of-type(2) {
+            background: #f0f7ff;
+            color: #087443;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 9px;
+            outline: none;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+        }
+
+        button {
+            border: none;
+            padding: 13px 22px;
+            border-radius: 9px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 5px;
+        }
+
+        #deposit {
+            background: #16a34a;
+        }
+
+        #withdraw {
+            background: #dc2626;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #334155;
+            font-weight: bold;
+            min-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h2>My Bank Account</h2>
+
+        <h3 id="name"></h3>
+
+        <h3>Balance: Rs. <span id="balance"></span></h3>
+
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <br>
+
+        <button id="deposit">Deposit</button>
+
+        <button id="withdraw">Withdraw</button>
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <script>
+
+        // STEP 1: Create Object
+
+        let account = {
+
+            name: 'Ihsan',
+            balance: 50000,
+
+            deposit: function (amount) {
+
+                if (amount <= 0) {
+                    return 'Enter a valid amount';
+                }
+
+                this.balance = this.balance + amount;
+
+                return 'Money deposited successfully!';
+            },
+
+
+            // STEP 3: Withdraw Method
+
+            withdraw: function (amount) {
+
+                if (amount <= 0) {
+                    return 'Enter a valid amount';
+                }
+
+                if (amount > this.balance) {
+                    return 'Insufficient balance!';
+                }
+
+                this.balance = this.balance - amount;
+
+                return 'Money withdrawn successfully!';
+            }
+
+        };
+
+
+        // STEP 4: Show Account Information
+
+        document.getElementById('name').textContent =
+            account.name;
+
+
+        function updateBalance() {
+
+            document.getElementById('balance').textContent =
+                account.balance;
+
+        }
+
+        updateBalance();
+
+
+        // STEP 5: Deposit Button
+
+        document.getElementById('deposit').addEventListener('click', function () {
+
+            let amount = Number(
+                document.getElementById('amount').value
+            );
+
+            let result = account.deposit(amount);
+
+            document.getElementById('message').textContent = result;
+
+            updateBalance();
+
+        });
+
+
+        // STEP 6: Withdraw Button
+
+        document.getElementById('withdraw').addEventListener('click', function () {
+
+            let amount = Number(
+                document.getElementById('amount').value
+            );
+
+            let result = account.withdraw(amount);
+
+            document.getElementById('message').textContent = result;
+
+            updateBalance();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

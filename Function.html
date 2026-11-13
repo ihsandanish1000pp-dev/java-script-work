@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            margin: 0%;
+            background-color: aliceblue;
+        }
+ 
+
+        .prod{
+
+               
+        }
+         
+
+
+        /* .studentList {
+            background-color: white;
+            width: 350px;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid blue;
+            display: flex;
+        } 
+         .student h2 {
+            color: #ff00f7;
+            margin-top: 0;
+        }
+
+        .student p {
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Function  -->
+    <h1>Hello Function</h1>
+    <div id="result"></div>
+    <!-- <button onclick="list()">list</button> -->
+    <!-- <button onclick="greet()">show name</button> -->
+</body>
+
+
+<script>
+
+
+
+    //   function name(){
+    //      document.write('Hello How are You');
+    //   }
+
+    //    name();
+    //    name();
+
+
+
+    // function greet() {
+    //     document.write('Hello ihsan How are You')
+    // }
+
+    // greet();
+
+
+    // function greet() {
+    //     document.getElementById('result').innerHTML = 'Hello How Are You';
+    // }
+
+
+
+
+    //  function std(name){
+    //     document.getElementById('result').innerHTML = name
+    //  }
+
+    //   std('Ihsan !');
+
+
+
+    // let name = 'Ihsan Khan Bangash';
+
+    //  function student(){
+    //     document.getElementById('result').innerHTML = name
+    //  }
+
+    //  student();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   function std (name,age){
+
+    //      document.getElementById('result').innerHTML = `Name : ` + name + " <br/> " + `age : ` +age;
+    //   }
+
+    //     std('Danish', 25);
+
+
+
+
+    // function add(a, b) {
+    //     document.getElementById('result').innerHTML = a + b;
+    // }
+
+    // add(20, 40);
+
+
+
+    // let a = 30;
+    // let b = 40;
+
+    // function add(){
+    //     document.getElementById('result').innerHTML = a+b;
+    // }
+
+    //  add();
+
+
+
+
+
+
+    // function add(a, b) {
+    //     return a + b;
+    // }
+
+
+    // let result = add(10, 20);
+    // document.getElementById("result").innerHTML = result*2;
+
+
+
+
+
+    //  function mulit(a,b){
+    //     return a*b;
+    //  }
+
+    //  let result = mulit(20,600);
+    //  document.getElementById("result").innerHTML = result;
+
+
+
+
+    //    let a = 30;
+    //    let b = 2000;
+
+    //    let multi = function(){
+    //         document.getElementById('result').innerHTML = a * b;
+    //     }
+
+    //     let result = mulit();
+
+
+
+
+    // function calculateTotal(price1, price2, price3) {
+
+    //     let total = price1 + price2 + price3;
+
+    //     document.getElementById('result').innerHTML =
+    //         `Total Price: Rs. ${total}`;
+    // }
+
+    // calculateTotal(100000, 100000, 100000);
+
+    //    function col(preice1 , priece2, price3){
+    //     let total = preice1 + priece2 + price3;
+    //      document.getElementById('result').innerHTML = `Total price :` + total;
+    //    }
+
+    //     col(1000,1000,1000);
+
+
+
+
+
+
+    // let total = 0;
+
+    // function col() {
+    //     total = 1000 + 2000;
+    // }
+
+    // col()
+    // document.getElementById('result').innerHTML = `Total Price :` + total
+
+
+
+
+
+    // let name = 'Ihsan';
+    // let LastName = 'Danihs';
+    // let age = 23
+
+    // function list() {
+
+    //     name = 'Ihsan';
+    //     LastName = 'Danihs';
+    // }
+
+    // list()
+    // document.getElementById('result').innerHTML = `My Name is :  ${name}  ${LastName} ${age}`;
+
+
+    //     let person = {
+
+    //         FirstName: 'Ihsan',
+    //         LastName: 'Danihs',
+    //         Age: 23,
+    //         Gender: 'Male',
+    //     }
+
+
+    //     function list() {
+
+    //         person.FirstName = 'Ihsan',
+    //             person.LastName = 'Danihs',
+    //             person.Age = 23,
+    //             person.Gender = 'Male'
+    //     }
+
+    //     document.getElementById('result').innerHTML = ` Person Detail :   ${person.FirstName} ${person.LastName} ${person.Age} ${person.Gender}`;
+
+    //    list()
+
+
+
+    // let studentList = [
+
+    //     {
+    //         Name: 'Ihsan',
+    //         FName: 'Muhammad Tariq',
+    //         DOB: '2003',
+    //         Gender: 'Male'
+    //     },
+
+    //     {
+    //         Name: 'Danihs',
+    //         FName: 'Akhtar Zadin',
+    //         DOB: '2005',
+    //         Gender: 'Male'
+    //     },
+
+    //     {
+    //         Name: 'Asif',
+    //         FName: 'Hanif',
+    //         DOB: '2009',
+    //         Gender: 'Male'
+    //     },
+
+    //     {
+    //         Name: 'Ahmad',
+    //         FName: 'Muhammad Tariq',
+    //         DOB: '2015',
+    //         Gender: 'Male'
+    //     },
+    // ]
+
+    // function list() {
+
+    //     studentList.forEach(function (item) {
+
+    //         document.write(`Name: ${item.Name} <br>`);
+    //         document.write(`Father Name: ${item.FName} <br>`);
+    //         document.write(`DOB: ${item.DOB} <br>`);
+    //         document.write(`Gender: ${item.Gender} <br><br>`);
+
+    //     });
+
+    // }
+
+    // list();
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let studentList = [
+
+    //     {
+    //         Name: 'Ihsan',
+    //         FName: 'Muhammad Tariq',
+    //         age: 25,
+    //         Gender: 'Male'
+    //     },
+
+    //     {
+    //         Name: 'Asit',
+    //         FName: 'Muhammad Hanif',
+    //         age: 25,
+    //         Gender: 'Male'
+    //     },
+    //     {
+    //         Name: 'Ahmad',
+    //         FName: 'Muhammad Tariq',
+    //         age: 25,
+    //         Gender: 'Male'
+    //     },
+    //     {
+    //         Name: 'Mubrak',
+    //         FName: 'Naimat Ullah',
+    //         age: 25,
+    //         Gender: 'Male'
+    //     },
+    // ]
+
+
+
+    // function list() {
+
+    //     studentList.forEach(function (item) {
+
+    //         document.write(
+    //             `
+    //             <div class = "student">
+    //                    <h2>${item.Name}</h2>
+    //                    <p> Father Name : ${item.FName}</p>
+    //                    <p> Age :  ${item.age}</p>
+    //                    <p>Gender: ${item.Gender}</p>
+    //                 <div/>
+    //         `
+    //         )
+
+    //     })
+    // }
+
+    // list();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // studentList = [
+
+    //     {
+    //         Name: 'Khan',
+    //         FName: 'Muhammad Nasir',
+    //         Gender: 'Male',
+    //         DOB: 23,
+    //     },
+
+
+    //     {
+    //         Name: 'Sami',
+    //         FName: 'Muhammad Umar',
+    //         Gender: 'Male',
+    //         DOB: 23,
+    //     },
+
+    //     {
+    //         Name: 'Nasir',
+    //         FName: 'Wail zadin',
+    //         Gender: 'Male',
+    //         DOB: 33,
+    //     },
+
+
+
+    //     {
+    //         Name: 'Danihs',
+    //         FName: 'Muhammad ',
+    //         Gender: 'Male',
+    //         DOB: 21,
+    //     },
+    // ]
+
+
+
+    // function list() {
+
+    //     studentList.forEach(function (item) {
+
+    //         document.write(
+    //             `
+    //                      <div>
+    //                              <h2>'Name :'  ${item.Name}</h2>
+    //                              <p>'F/Name :' ${item.FName}</p>
+    //                              <p> 'Gender :' ${item.Gender} </p>
+    //                              <p>'DOB : ' ${item.DOB}</p>
+    //                         </div>
+    //                 `
+    //         )
+    //     })
+    // }
+
+
+    // list();
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   let product = [
+
+        {
+              Name : 'Laptop',
+              price : 20000,
+
+        },
+
+        {
+            Name : 'Mouse',
+            price : 400,
+        },
+
+        {
+            Name : 'Keybord',
+            price: 600
+        },
+
+        {
+            Name : 'Screen',
+            price : 4000
+        },
+        
+   ]
+  
+
+
+      function productList(){
+
+         product.forEach(function(item){
+             document.write(
+                 `
+                     <div class = "prod">
+                            <h2> Product Name : ${item.Name} </h2>
+                            <p> Product Price :  ${item.price}</p>
+                        </div>
+                 `
+             )
+         })
+      }
+
+
+       productList();
+</script>
+
+</html>

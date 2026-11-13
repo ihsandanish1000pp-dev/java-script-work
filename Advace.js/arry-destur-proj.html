@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+</head>
+<body>
+
+    <div id="result"></div>
+
+    <script>
+        let student = [
+            'Ihsan Ullah',
+            24,
+            'Frontend Developer',
+            'React.js',
+            'Pakistan'
+        ];
+
+        // Array Destructuring
+        let [name, age, profession, skill, country] = student;
+
+        // Display on Screen
+        document.getElementById('result').innerHTML = `
+            <h2>Student Profile</h2>
+            <h3>Name: ${name}</h3>
+            <p>Age: ${age}</p>
+            <p>Profession: ${profession}</p>
+            <p>Skill: ${skill}</p>
+            <p>Country: ${country}</p>
+        `;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1> Object and Object Methods</h1>
+</body>
+
+
+
+<script>
+
+    // let name = {
+
+    //     Name: 'Ihsan',
+    //     Age: 33,
+    // }
+    // document.write(name.Name + ('<br/>'))
+    // document.write(name.Age + "<br/>")
+
+
+
+
+    //     let student = {
+    //     name: 'Ihsan',
+    //     age: 33,
+    //     city: 'Rawalpindi'
+    // };
+
+
+    //  document.write(student.name)
+    //  document.write(student.age)
+    //  document.write(student.city)
+
+
+
+
+
+
+    // let student = {
+
+    //     Name: 'Ihsan',
+    //     Age: 20,
+    //     city: 'Isb',
+    //     country: 'Pakistan'
+    // }
+
+    //  document.write(
+    //     `${student.Name}<br/>
+    //      ${student.Age}<br/>
+    //      ${student.city}<br/>
+    //      ${student.country}
+    //     `
+    //  )
+
+
+
+
+
+
+
+    // let Employe = {
+
+    //     Name: 'Ihsan',
+    //     Age: 25,
+    //     position: 'Frontend Devloper',
+    //     compeny: 'swismax Solution',
+    //     salary: 50000,
+    // }
+
+    // document.write(
+    //     `
+    //       ${Employe.Name}<br/>
+    //       ${Employe.Age}<br/>
+    //       ${Employe.position}<br/>
+    //       ${Employe.compeny}<br/>
+    //       ${Employe.salary}<br/>
+    //   `
+    // )
+
+
+
+
+    // let student = {
+
+    //      Name : 'Ihsan',
+    //      Age : 25,
+
+    //      greet: function() {
+    //         return 'Hello Danihs';
+    //      }
+    // }
+    //          document.write(student.greet())
+
+
+
+
+
+    //     let product = {
+    //     name: 'Laptop',
+    //     price: 120000,
+    //     quantity: 4,
+
+    //     calculateTotal: function() {
+    //         return this.price * this.quantity;
+    //     }
+    // };
+
+    //   document.write(product.calculateTotal());
+
+
+
+
+    //   let account = {
+    //     name: 'Ihsan',
+    //     balance: 50000,
+
+    //     deposit: function(amount) {
+    //         this.balance = this.balance + amount;
+    //         return this.balance;
+    //     }
+    // };
+
+
+    //  document.write(
+    //       `
+    //        ${account.name} <br/>
+    //        ${account.balance}
+
+    //       `
+    //  )
+
+
+
+
+
+
+    // let account = {
+    //     name: 'Ihsan',
+    //     balance: 50000,
+
+    //     deposit: function (amount) {
+    //         this.balance = this.balance + amount;
+    //     }
+    // };
+
+
+
+    //  document.write(
+    //     `${account.name} <br/> 
+    //      ${account.balance}
+    //     `
+    //  )
+
+
+
+
+
+
+
+
+
+    // let account = {
+
+    //     Name: 'Ihsan',
+    //     balance: 2000,
+    // }
+
+    // document.write(
+    //     `
+    //           ${account.Name}<br/>
+    //           ${account.balance} 
+    //              `
+    // )
+
+
+
+
+
+    // let list = {
+
+    //     Name : 'Ihsan',
+    //     age : 12
+    // }
+
+    // document.write(
+    //       `${list.Name}<br/>
+    //        ${list.age}
+    //       `
+    // )
+
+
+
+
+
+    //  let student = {
+    //      Name: 'Ihsan',
+
+    //      study : function(){
+
+    //          return  'My anme is ' + this.Name;
+    //      }
+    //  }
+
+    //   document.write(student.study());
+
+
+
+    // let list = [
+
+    //     {
+    //         Name: 'Ihsan',
+    //         age: 11,
+    //         city: 'patak'
+    //     },
+
+
+    //     {
+    //         Name: 'Sami',
+    //         age: 32,
+    //         city: 'hangu'
+    //     },
+
+
+
+    //     {
+    //         Name: 'Nasir',
+    //         age: 44,
+    //         city: 'Kohat'
+    //     },
+
+
+    //     {
+    //         Name: 'Tufail',
+    //         age: 16,
+    //         city: 'hangu'
+    //     }
+    // ]
+
+
+    // list.forEach(function (item) {
+    //     document.write(
+            
+    //         `
+    //     Name: ${item.Name}<br/>
+    //     Age: ${item.age}<br/>
+    //     City: ${item.city}<br/>
+    //     <hr/>
+    //     `
+    //     );
+    // });
+
+    let person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    person.age = 51;
+    document.write(person.fullName() + " is " + person.age);
+
+</script>
+
+</html>
