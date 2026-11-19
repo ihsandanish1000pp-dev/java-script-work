@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Food Menu</title>
+</head>
+<body>
+
+    <h1>Restaurant Food Menu</h1>
+    <div id="foodlist"></div>
+
+    <script>
+        let FastFood = [
+            { Name: 'Pizza', price: 400 },
+            { Name: 'Burger', price: 600 },
+            { Name: 'Zinger Burger', price: 1000 },
+            { Name: 'Shawarma', price: 120 }
+        ];
+
+        let desiFood = [
+            { Name: 'Karahi', price: 500 },
+            { Name: 'Biryani', price: 600 },
+            { Name: 'Tandoori Roti', price: 230 }
+        ];
+        let allfoods = [...FastFood, ...desiFood];
+
+        
+        let expensiveFoods = allfoods.filter(function(item) {
+            return item.price >= 500;
+        });
+
+        
+        let result = expensiveFoods.map(function(item) {
+            return `
+                <div class="food">
+                    <h2>Food Name: ${item.Name}</h2>
+                    <p>Price: Rs. ${item.price}</p>
+                    <hr>
+                </div>
+            `;
+        });
+
+        
+        document.getElementById('foodlist').innerHTML = result.join("");
+
+    </script>
+
+</body>
+</html>

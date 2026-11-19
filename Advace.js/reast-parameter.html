@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Rest parameter</h1>
+</body>
+
+
+<script>
+
+
+    //  function add(...number){
+    //     document.write(number);
+    //  }
+
+    //   add(100,200,200)
+
+
+    //  function addNumber(...number){
+    //      document.write(number)
+    //  }
+
+    //   addNumber(100,200,400,)
+
+
+
+
+    // function product(...price) {
+
+    //     let total = 0;
+
+    //     price.forEach(function (item) {
+
+    //         total = total + item;
+
+    //     });
+
+    //     document.write(total);
+    // }
+
+    // product(100, 200, 300, 400);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   function product(...price){
+    //    let total = 0
+    //       price.forEach(function(item){
+
+    //          total = total+item;
+    //       })
+
+    //       document.write(total)
+    //   }
+
+    //    product(100,200,400,500);
+
+
+
+    // function student(...marks) {
+    //     let total = 0;
+    //     marks.forEach(function (item) {
+    //         total = total + item
+    //     })
+
+    //     let avarge = total / marks.length;
+    //     document.write(total);
+    //     document.write("</br>")
+    //     document.write(`Avarge : ` + avarge)
+
+    // }
+
+    // student(60, 70, 40, 60);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function productprice(...price){
+  total = 0;
+   
+   price.forEach(function(item){
+    total = total+item;
+   })
+    let discount = total*10/100;
+    document.write( 'total : ' + total);
+    document.write("<br>");
+    document.write( 'Discount : ' +  discount);
+  }
+
+   productprice(   1000,2000,3000,)
+</script>
+
+</html>

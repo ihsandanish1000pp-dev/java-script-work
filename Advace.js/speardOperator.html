@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+     <style>
+         .food{
+
+              border: 1px solid black;
+              display: grid;
+         }
+     </style>
+</head>
+
+<body>
+
+    <h1>SPeard Operator</h1>
+
+    <div id="products"></div>
+    <div id="studentList"></div>
+    <div id="foodlist"></div>
+</body>
+
+
+<script>
+
+    //  let name = ['Ihsan','Danihs','Bangash','Noman',];
+    //  console.log(...name)
+
+
+
+    // let boy = ['Khan', 'Bangash', 'mousa'];
+    // let girls = ['ayesha', 'saima']
+    // let student = [...boy, ...girls];
+    // document.write(student);
+
+
+
+
+
+
+    // let boys = ['Khan', 'Bangash', 'Ihsan'];
+    // let girls = ['Ayesha', 'Amsha'];
+    // let student = [...boys, ...girls]
+
+    // document.write(student)
+    // document.write(student.length)
+
+
+
+
+
+
+
+    // let mobiles = [
+    //     { name: 'iPhone 16', price: 250000 },
+    //     { name: 'Samsung S25', price: 220000 },
+    //     { name: 'Oppo Reno', price: 80000 }
+    // ];
+
+    // let laptops = [
+    //     { name: 'Dell Laptop', price: 150000 },
+    //     { name: 'HP Laptop', price: 130000 },
+    //     { name: 'Lenovo Laptop', price: 120000 }
+    // ];
+
+    // let allProducts = [...mobiles, ...laptops];
+
+
+    // let result = allProducts.map(function (item) {
+
+    //     return `
+    //     <div>
+    //         <h2>${item.name}</h2>
+    //         <h3>Price: Rs ${item.price}</h3>
+    //         <button>Buy Now</button>
+    //         <hr>
+    //     </div>
+    // `;
+    // });
+
+    // document.getElementById('products').innerHTML = result.join('');
+
+//     let Boys = [
+
+//         {
+//             Name: 'Ihsan',
+//             age: 25,
+//             gender: 'Male'
+
+//         },
+
+//         {
+//             Name: 'zakriya',
+//             age: 12,
+//             gender: 'Male'
+
+//         },
+
+//         {
+//             Name: 'Ahmad',
+//             age: 10,
+//             gender: 'Male'
+
+//         },
+
+
+//         {
+//             Name: 'Asif',
+//             age: 15,
+//             gender: 'Male'
+
+//         },
+
+
+//         {
+//             Name: 'Nasir',
+//             age: 35,
+//             gender: 'Male'
+
+//         },
+//         {
+//             Name: 'sami',
+//             age: 22,
+//             gender: 'Male'
+
+//         },
+//     ];
+
+//     let girls = [
+
+//         {
+//             Name: 'Ayesah',
+//             age: 2,
+//             gender: 'Female',
+//         },
+//         {
+//             Name: 'Amsha',
+//             age: 24,
+//             gender: 'Female'
+//         },
+
+//         {
+//             Name: 'Fatiam',
+//             age: 22,
+//             gender: 'Female',
+//         },
+
+//         {
+//             Name: 'Zainab',
+//             age: 25,
+//             gender: 'Female',
+//         }
+//     ];
+
+//       let totalStudent = [...Boys,...girls];
+      
+//        let result= totalStudent.map(function(item){
+
+//          return(
+//              `
+//                  <div class = "std">
+//                        <h2> Name : ${item.Name}</h2>
+//                        <p>age : ${item.age}</p>
+//                        <p>gender: ${item.gender}</p>
+//                     </div>
+//              `
+//          )
+//        })
+
+//         document.getElementById('studentList').innerHTML = result.join(" ");
+
+
+    let FastFood = [
+
+           {
+                Name : 'Pizz',
+                price : 400,
+           },
+
+           {
+              Name : 'Burgar',
+              price : 600,
+           }, 
+
+           {
+              Name : 'Zinger Burgar',
+              price : 1000
+           },
+
+           {
+              Name : 'Shawarm',
+              price : 120,
+           },
+    ] 
+
+
+     let desiFood = [
+
+           {
+               Name : 'Karhiii',
+               price : 500,
+           },
+
+
+            {
+
+                 Name : 'Baryanii',
+                 price : 600,
+            },
+
+            {
+                  Name : 'tandoree rotii',
+                  price : 230,
+            },
+     ];
+
+
+      let allfoods = [...FastFood,...desiFood];
+      let expinsvefoods = allfoods.filter(function(item){
+         return item.price>300;
+      })
+      let result =  allfoods.map(function(item){
+         return(
+             `
+                 <div class = "food">
+                        <h1> Food Name : ${item.Name}</h1>
+                        <p>price: ${item.price}</p>
+                    </div>
+             `
+         )
+      })
+
+
+       document.getElementById('foodlist').innerHTML = result.join("");
+
+
+
+
+
+
+    //  let price = [ 200 , 300 , 400 , 500 , 600 ];
+
+    //   let result = price.filter(function(item){
+
+    //      return item>200;
+    //   })
+
+    //    document.write(result);
+ </script>
+
+</html>
