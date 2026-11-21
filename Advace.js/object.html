@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2> Desturting Object </h2>
+
+    <div class="container"></div>
+    <script>
+        // let product = {
+
+        //     Name:'Ihsan',
+        //     age:23,
+        //     Gender:'Male',
+        // }
+
+
+        // let {Name,age,Gender}=product;
+        // document.write(
+
+        //     `
+        //        <div class = 'oriddd'>
+        //             <h3> Name: ${Name}</h3>
+        //             <p> age : ${age}</p>
+        //             <p> Gender: ${Gender}<p/>
+        //         <div>
+        //      `
+        // )
+
+
+
+        let list = [
+            {
+                Name: 'Ihsan',
+                Age: 23,
+                Gender: 'Male',
+            },
+
+            {
+                Name: 'Safi',
+                Age: 32,
+                Gender: 'Male',
+            },
+
+            {
+                Name: 'Sami',
+                Age: 27,
+                Gender: 'Male',
+            },
+
+            {
+                Name: 'Asif',
+                Age: 13,
+                Gender: 'Male',
+            },
+
+
+
+            {
+                Name: 'Nasir',
+                Age: 29,
+                Gender: 'Male',
+            },
+        ]
+
+        let lists = document.querySelector('.container');
+        list.forEach(function ({ Name, Age, Gender }) {
+            lists.innerHTML += `
+             
+               <div class = "prod">
+                   <h1> Name : ${Name}</h1>
+                    <p> Age : ${Age}<p/>
+                        <p>Gender: ${Gender}<p>
+                </div>
+           `
+        })
+    </script>
+</body>
+
+</html>
