@@ -9,6 +9,7 @@
 
 <body>
     <h1>Rest parameter</h1>
+    <div id="result"></div>
 </body>
 
 
@@ -47,20 +48,6 @@
     // product(100, 200, 300, 400);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //   function product(...price){
     //    let total = 0
     //       price.forEach(function(item){
@@ -91,6 +78,187 @@
     // student(60, 70, 40, 60);
 
 
+    //   function productprice(...price){
+    //   total = 0;
+
+    //    price.forEach(function(item){
+    //     total = total+item;
+    //    })
+    //     let discount = total*10/100;
+    //     document.write( 'total : ' + total);
+    //     document.write("<br>");
+    //     document.write( 'Discount : ' +  discount);
+    //   }
+
+    //    productprice(1000,2000,3000,)
+
+
+
+    // let show = (...price) => {
+    //     document.write(price)
+    // }
+
+    // show(100, 200, 300, 400,);
+
+
+    // let greet = (...price) => {
+    //     document.write(price)
+    // }
+
+    // greet(100, 200, 300)
+
+
+
+
+    // let student = (...StudentList) => {
+    //     document.write(StudentList);
+    // }
+
+    // student(
+    //     'Ihsan',
+    //     25,
+    //     'Male',
+
+
+    // )
+
+
+
+
+    // let student = (...data) => {
+    //     document.write(data.join(" - "));
+    // }
+
+    // student('Ihsan', 25, 'Male', 'Pakistan');
+
+
+
+
+
+    // let shoppingCart = (customerName, ...prices) => {
+
+    //     let total = 0;
+
+    //     prices.forEach(function (item) {
+    //         total = total + item;
+    //     });
+
+    //     let discount = total * 10 / 100;
+
+    //     let finalPrice = total - discount;
+
+    //     document.write("<h2>Shopping Bill</h2>");
+
+    //     document.write("Customer: " + customerName);
+    //     document.write("<br>");
+
+    //     document.write("Products: " + prices.join(" , "));
+    //     document.write("<br>");
+
+    //     document.write("Total Price: Rs. " + total);
+    //     document.write("<br>");
+
+    //     document.write("Discount: Rs. " + discount);
+    //     document.write("<br>");
+
+    //     document.write("<h3>Final Price: Rs. " + finalPrice + "</h3>");
+    // };
+
+    // shoppingCart("Ihsan", 1000, 2000, 3000, 4000);
+
+
+
+
+
+    // let customer = (customerName, ...price)=>{
+    //     document.write(customerName),
+    //     document.write(price)
+    // }
+
+    //  customer('Ihsan', 1000,2000,400,);
+
+
+
+
+
+    // let product = (...price) => {
+    //     document.write(price)
+    // }
+    // product(100, 200, 300);
+
+
+    // let shoppingCart = (customerName, ...prices) => {
+
+    //     let total = 0;
+
+    //     prices.forEach(function (item) {
+    //         total = total + item;
+    //     });
+
+    //     let discount = total * 10 / 100;
+    //     let finalPrice = total - discount;
+
+    //     document.write("<h2>Shopping Bill</h2>");
+
+    //     document.write("Customer: " + customerName);
+    //     document.write("<br>");
+
+    //     document.write("Products: " + prices.join(" - "));
+    //     document.write("<br>");
+
+    //     document.write("Total Price: Rs. " + total);
+    //     document.write("<br>");
+
+    //     document.write("Discount: Rs. " + discount);
+    //     document.write("<br>");
+
+    //     document.write("<h3>Final Price: Rs. " + finalPrice + "</h3>");
+    // };
+    // shoppingCart("Ihsan", 1000, 2000, 3000, 4000);
+
+
+
+
+    // let student = (...details) => {
+    //     document.write(details + "</br>")
+    // }
+
+    // student('Ihsan'   + "</br>" , 23 + "</br>", 'BSCS' + "</br>" , 'Pakistan')
+
+
+
+
+    // function calculatePrice(...prices) {
+
+    //     let total = 0;
+
+    //     prices.forEach(function (item) {
+    //         total = total + item;
+    //     });
+    //     document.write('Total Price: Rs. ' + total);
+    // }
+    // calculatePrice(1000, 2000, 3000, 4000);
+
+
+
+
+
+    // let shopingcart = (...price) => {
+    //     let total = 0;
+
+    //     price.forEach(function (item) {
+    //         total = total + item;
+    //     });
+
+    //     document.querySelector('#result').innerHTML +=
+    //         `
+    //       <div class = 'card'>
+    //             <p> Total Price : ${total}</p>
+    //         </div>
+    //     `
+    // }
+
+    // shopingcart(100, 200, 300, 400)
 
 
 
@@ -104,19 +272,116 @@
 
 
 
-  function productprice(...price){
-  total = 0;
-   
-   price.forEach(function(item){
-    total = total+item;
-   })
-    let discount = total*10/100;
-    document.write( 'total : ' + total);
-    document.write("<br>");
-    document.write( 'Discount : ' +  discount);
-  }
 
-   productprice(   1000,2000,3000,)
+
+
+
+
+    // let shopingcart = (...price)=>{
+    //     let total = 0;
+
+    //     price.forEach(function(item){
+    //         total = total + item;
+    //     });
+
+    //    document.querySelector('#result').innerHTML += `
+
+
+    //        <div class = 'card'> 
+    //           <p> total Price : ${total}</p>
+    //         </div>
+    //    `
+    // }
+
+    // shopingcart(100,200,300,400,1000);
+
+
+
+    // let list = (...student) => {
+    //     let total = '';
+
+    //     student.forEach(function (item) {
+    //         total = total + item;
+    //     })
+
+    //     document.querySelector('#result').innerHTML =
+    //         `
+    //          <div class = 'card'>
+
+    //                 <p> total Student : ${total} </p>
+    //                 <p> Total student lingth: ${student.length} </p>
+    //             </div>
+    //       `
+    // };
+
+
+    // list('Ihsan' + "</br>", 'Danihs' + "</br>", 'Khan' + "</br>", 'Bangash');
+
+
+
+
+    let studentMarks = (...totalMarks) => {
+        let total = 0;
+
+        totalMarks.forEach(function (item) {
+            total = total + item;
+        });
+
+        document.querySelector('#result').innerHTML =
+            `
+            <div class = 'card'> Total Marks : ${total}
+                      <p> Total Length : ${totalMarks.length}<p>
+                <div>
+        `
+    }
+
+    studentMarks(50, 60, 70, 80);
+
+
+
+    let product = (...price) => {
+        let total = 0;
+
+        price.forEach(function (item) {
+            total = total + item;
+        });
+
+        document.querySelector('#result').innerHTML =
+            `
+             <div class = 'card'>
+                   <h3> Total Price :  ${total}</h3>
+                    <p> Total Length : ${price.length}</p>
+                </div>
+         `
+    }
+    product(100, 200, 1000, 2000)
+
+
+
+
+
+
+
+
+ std = (  ...marks) => {
+    let total = 0;
+    
+     marks.forEach(function(item){
+        total = total + item;
+     });
+
+     document.querySelector('#result').innerHTML = 
+     `
+       <div class = 'card'>
+           <h1> Total Marks : ${total}</h1>
+           <p>  length : ${marks.length}</p>
+        <div>
+      
+     `     
+ }
+
+   std(100,50,60, 70);
+
 </script>
 
 </html>
