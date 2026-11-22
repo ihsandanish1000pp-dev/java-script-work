@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Speard Operator 1</h1>
+    <div id="res"></div>
+</body>
+
+
+<script>
+
+    // let list = ['Ihsan', 'Danihs', 'Khan', 'Bangash'];
+    // document.write(...list);
+
+
+
+
+    // let oldStudent = ['Ihsan', 'Danihs', 'Khan', 'Bangash'];
+    // let newStudent = ['Sara', 'Ayesah', 'Fatama'];
+    // let arr = [...oldStudent, ...newStudent];
+    // document.write(arr.join('<br>'));
+
+
+    //  let std = ['Ihsan' , 'Khan' , 'Bangash'];
+    //  document.write(...std.join('<br>'))
+
+
+
+    // let newe = ['Ihsan','Sami','Bangash'];
+    // console.log(...newe)
+
+
+    //  let NewProduct = ['Laptop','Mouse','Keyborad'];
+    //  let oldProduct = ['Screen','Tablet','Mobile'];
+
+    // console.log(...NewProduct,...oldProduct);
+
+
+
+
+
+    // Food List
+
+
+    let Fastfood = [
+
+        { Name: 'Buragar', Price: 200 },
+        { Name: 'PIzz', price: 300 },
+        { Name: 'Zinger Buragar', price: 500 },
+        { Name: 'Finger Cheeps', price: 600 },
+    ];
+
+    let disefood = [
+        { Name: 'checken Karyee', price: 1200 },
+        { Name: 'Baryani', price: 400 },
+        { Name: 'Meet Karyee', price: 500 },
+    ];
+
+    let allfoods = [...Fastfood, ...disefood]
+
+    let expensiveFoods = allfoods.filter(function (item) {
+        return item.price >= 100;
+    });
+
+    let result = expensiveFoods.map(function (item) {
+        return `
+        
+           <div class = 'food'> 
+                <h4> Name : ${item.Name}</h4>
+                     Price : ${item.price}
+                </div>
+      `
+    })
+
+    document.getElementById('res').innerHTML = result.join('')
+</script>
+
+</html>

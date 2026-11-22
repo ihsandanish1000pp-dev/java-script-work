@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Student Managment
+    <div id="result"></div>
+</body>
+
+
+<script>
+
+    let classA = [
+        { Name: 'Ihsan', Marks: 70 },
+        { Name: 'Sami', Marks: 60 },
+        { Name: 'Nasir', Marks: 80},
+        {Name: 'Ahmad', Marks: 98},
+    ];
+
+    let classB = [
+         
+        {Name: 'Safi', Marks : 80},
+        {Name: 'Kashif', Marks : 40},
+        {Name: 'Noman', Marks : 30},
+        {Name: 'Tayyab', Marks : 30},
+    ];
+
+     let Allstudent = [...classA,...classB]
+
+     let passStudent = Allstudent.filter(function(item){
+          return item.Marks >=80;
+     });
+
+     let result = passStudent.map(function(item){
+        return `
+        
+            <div class = 'std'>
+                <h4>Name: ${item.Name}</h4>
+                  <b> Marks : ${item.Marks}</b>
+                </div>
+        `
+     })
+
+     document.querySelector('#result').innerHTML = result
+</script>
+
+</html>

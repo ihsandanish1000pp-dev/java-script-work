@@ -1,10 +1,10 @@
-
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Restaurant Food Menu</title>
 </head>
+
 <body>
 
     <h1>Restaurant Food Menu</h1>
@@ -23,15 +23,16 @@
             { Name: 'Biryani', price: 600 },
             { Name: 'Tandoori Roti', price: 230 }
         ];
+        
         let allfoods = [...FastFood, ...desiFood];
 
-        
-        let expensiveFoods = allfoods.filter(function(item) {
-            return item.price >= 500;
+
+        let expensiveFoods = allfoods.filter(function (item) {
+            return item.price >= 100;
         });
 
-        
-        let result = expensiveFoods.map(function(item) {
+
+        let result = expensiveFoods.map(function (item) {
             return `
                 <div class="food">
                     <h2>Food Name: ${item.Name}</h2>
@@ -41,10 +42,11 @@
             `;
         });
 
-        
+
         document.getElementById('foodlist').innerHTML = result.join("");
 
     </script>
 
 </body>
+
 </html>

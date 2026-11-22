@@ -226,15 +226,15 @@
    //  document.write(login('IhsanDanihs@gmail.com', '9999'))
 
 
-   // let withdraw = (blance, amount) => {
+   let withdraws = (blance, amount) => {
 
-   //    if (amount <= blance) {
-   //       return 'withdraw successFull';
-   //    } else {
-   //       return 'insufficent Blance';
-   //    }
-   // }
-   // document.write(withdraw(10000, 20000));
+      if (amount <= blance) {
+         return 'withdraw successFull';
+      } else {
+         return 'insufficent Blance';
+      }
+   }
+   document.write(withdraws(10000, 20000));
 
 
 
