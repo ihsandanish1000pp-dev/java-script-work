@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Default Parameter</h4>
+    <div id="res"></div>
+</body>
+
+
+<script>
+
+    function std(name = 'ihsan') {
+        document.write(name)
+    }
+
+    std();
+
+    function student(Name = 'Ihsan') {
+        document.write(Name);
+    }
+
+    student('Sami');
+
+
+    function orderProduct(product, price, delivery = 200) {
+
+        let total = price + delivery;
+
+        document.write(`
+        <h2>Product: ${product}</h2>
+        <p>Product Price: Rs. ${price}</p>
+        <p>Delivery Charges: Rs. ${delivery}</p>
+        <h3>Total Bill: Rs. ${total}</h3>
+    `);
+
+    }
+
+    orderProduct('Laptop', 50000);
+
+
+        let productcart = (product, price, delivery = 200) => {
+            let total = price + delivery;
+
+
+            document.getElementById('res').innerHTML = `
+
+           <div class = 'card'>
+                <h2> Product : ${product}</h2>
+                <p> price : ${price} <p/>
+                 <p>Delivery charges : ${delivery}</p> 
+                 <p> Total: ${total}</p>  
+            </div>
+      `
+        };
+        productcart('Laptop', 50000);
+
+
+
+
+
+    let Employe = (Name, salary, bonus = 4000) => {
+        let total = salary + bonus;
+
+        document.getElementById('res').innerHTML +=
+            `
+        <div class = 'Employee'>
+              <h3> Name : ${Name}</h3>
+              <p> salary : ${salary}</p>
+              <p> Bonus : ${bonus}<p>
+                <p> Total salary : ${total} <p>
+            </div>
+    `
+    }
+
+    Employe('Ihsan', 80000)
+    Employe('Sami', 60000);
+    Employe('Ali', 50000);
+    Employe('Ahmed', 70000, 6000);
+</script>
+
+</html>
