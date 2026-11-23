@@ -11,7 +11,22 @@
 
     <h4> CallBack Function </h4>
 
-    <button id="btn">click</button>
+    <!-- <button id="btn">click</button> -->
+
+
+    <h2>Login System</h2>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <br><br>
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <br><br>
+
+    <button onclick="login()">Login</button>
+
+    <div id="result"></div>
 </body>
 
 
@@ -167,62 +182,167 @@
 
 
 
-  function showMessage(){
-    document.write('Hello my name is ihsan Ullah')
-  }
+    //   function showMessage(){
+    //     document.write('Hello my name is ihsan Ullah')
+    //   }
 
-   function pay(callback){
-       document.write('Hello How are You!')
-       callback()
-   }
-
-
-    pay(showMessage);
+    //    function pay(callback){
+    //        document.write('Hello How are You!')
+    //        callback()
+    //    }
 
 
-
-
-   function show(){
-    document.write( 'Hello How are you');
-   }
-
-   function showw(callback){
-    document.write('My name is ihsan Ullah ');
-    callback()
-   }
-
-   showw(show)
+    //     pay(showMessage);
 
 
 
 
- function speard(){
-    document.write('Hello How are You ')
- }
+    //    function show(){
+    //     document.write( 'Hello How are you');
+    //    }
 
+    //    function showw(callback){
+    //     document.write('My name is ihsan Ullah ');
+    //     callback()
+    //    }
 
-
-   function stdss(callback){
-     document.write('hello i am Fine')
-       callback()
-   }
-  
- stdss(speard)
+    //    showw(show)
 
 
 
 
-   function hello(){
-    document.write('Hello I am student')
-   };
+    //  function speard(){
+    //     document.write('Hello How are You ')
+    //  }
 
-   function student(callback){
-    document.write('My Name is ihsan Ullah')
-    callback()
-   }
 
-    
-    student(hello)
+
+    //    function stdss(callback){
+    //      document.write('hello i am Fine')
+    //        callback()
+    //    }
+
+    //  stdss(speard)
+
+
+
+
+    //    function hello(){
+    //     document.write('Hello I am student')
+    //    };
+
+    //    function student(callback){
+    //     document.write('My Name is ihsan Ullah')
+    //     callback()
+    //    }
+
+
+    //     student(hello)
+
+
+
+    //  function shopingcart(){
+    //     document.write('<h3>  Order placed</h3>')
+    //     document.write('<p> Heloo Your order is placed </p>')
+    //  }
+
+
+    //  function placedorder(callback){
+    //     callback()
+    //  }
+
+    //  placedorder(shopingcart);
+
+
+
+
+    // Function 1: Show Result
+    // function showResult() {
+    //     document.write('<h2>Student Result</h2>');
+    //     document.write('<h3>Name: Ihsan Ullah</h3>');
+    //     document.write('<h3>Total Marks: 250</h3>');
+    //     document.write('<h3>Obtained Marks: 200</h3>');
+    //     document.write('<h3>Percentage: 80%</h3>');
+    // }
+
+    // // Function 2: Calculate Result
+    // function calculateResult(callback) {
+
+    //     let totalMarks = 250;
+    //     let obtainedMarks = 200;
+    //     let percentage = (obtainedMarks / totalMarks) * 100;
+
+    //     document.write('<h3>Calculating Student Result...</h3>');
+
+    //     callback();
+    // }
+
+
+    // calculateResult(showResult);
+
+
+
+
+
+
+
+    //  function greet(){
+    //      document.write('Name : Ihsan')
+    //  }
+
+    //   function std(callback){
+    //      callback()
+    //   }
+
+    //    std(greet)
+
+
+
+
+
+    // Function 1: Success Message
+    function success() {
+        document.querySelector('#result').innerHTML =
+            '<h3>Welcome Ihsan! Login Successful</h3>';
+    }
+
+    // Function 2: Error Message
+    function error() {
+        document.querySelector('#result').innerHTML =
+            '<h3>Invalid Email or Password!</h3>';
+    }
+
+
+    // Function 3: Login System
+    function checkLogin(email, password, callback) {
+
+        if (email === 'ihsan@gmail.com' && password === '1234') {
+
+            callback(true);
+
+        } else {
+
+            callback(false);
+        }
+    }
+
+
+    // Function 4: Login Button
+    function login() {
+
+        let email = document.querySelector('#email').value;
+        let password = document.querySelector('#password').value;
+
+        checkLogin(email, password, function (status) {
+
+            if (status === true) {
+                success();
+            } else {
+                error();
+            }
+
+        });
+    }
 </script>
 
 </html>
