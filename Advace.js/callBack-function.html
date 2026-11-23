@@ -10,6 +10,8 @@
 <body>
 
     <h4> CallBack Function </h4>
+
+    <button id="btn">click</button>
 </body>
 
 
@@ -22,28 +24,205 @@
     //  greet('Ihsan', 12)
 
 
-    function student() {
-        document.write('My name is Ihsan');
-    }
+    // function student() {
+    //     document.write('My name is Ihsan');
+    // }
 
-    function result(callback) {
+    // function result(callback) {
 
-        callback();
+    //     callback();
 
-    }
-    result(student);
+    // }
+    // result(student);
 
 
 
-    function greet() {
-        console.log('Hello Ihsan');
-    }
+    // function greet() {
+    //     console.log('Hello Ihsan');
+    // }
 
-    function student(callback) {
-        callback();
-    }
+    // function student(callback) {
+    //     callback();
+    // }
 
-    student(greet);
+    // student(greet);
+
+
+
+
+    //  function greet(){
+    //      document.write('Hello Ihsan')
+    //  }
+
+    //  function student(callback){
+    //     callback()
+    //  }
+
+    //  student(greet);
+
+
+
+    // function greet() {
+    //     document.write('Hello Ihsan');
+    // }
+
+    // function student(callback) {
+    //     callback();
+    // }
+
+    // student(greet);
+
+
+
+    //  function name (){
+    //     document.write('Hello My name is ihsan ullah');
+    //  }
+
+
+    //   function student (callback){
+    //     callback()
+    //   }
+
+    //   student(name);
+
+
+
+    //   function helo (){
+    //     document.write('Hello How are You')
+    //   }
+
+    //   function  stdname(){
+    //     helo()
+    //   }
+
+    //     stdname(helo)
+
+
+
+
+
+
+
+
+    // function heloo (){
+    //     document.write('Hello How are you !')
+    // }
+
+
+    //  function std(callback){
+    //         callback()
+    //  }
+
+    //  std(heloo);
+
+
+
+    // function teacher() {
+    //     document.write('Hello i am Teacher')
+    // }
+
+    // function stddd(callback) {
+    //     callback()
+    // }
+
+    // teacher(stddd)
+
+
+
+    // function orderComplete() {
+    //     document.write('Your order is complete');
+    // }
+
+    // function placeOrder(callback) {
+    //     document.write('Your order is processing');
+
+    //     callback();
+    // }
+
+    // placeOrder(orderComplete);
+
+
+
+    // function showMessage() {
+    //     alert('Button clicked successfully');
+    // }
+
+    // function buttonClick(callback) {
+    //     document.querySelector('#btn').addEventListener('click', callback);
+    // }
+
+    // buttonClick(showMessage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function showMessage(){
+    document.write('Hello my name is ihsan Ullah')
+  }
+
+   function pay(callback){
+       document.write('Hello How are You!')
+       callback()
+   }
+
+
+    pay(showMessage);
+
+
+
+
+   function show(){
+    document.write( 'Hello How are you');
+   }
+
+   function showw(callback){
+    document.write('My name is ihsan Ullah ');
+    callback()
+   }
+
+   showw(show)
+
+
+
+
+ function speard(){
+    document.write('Hello How are You ')
+ }
+
+
+
+   function stdss(callback){
+     document.write('hello i am Fine')
+       callback()
+   }
+  
+ stdss(speard)
+
+
+
+
+   function hello(){
+    document.write('Hello I am student')
+   };
+
+   function student(callback){
+    document.write('My Name is ihsan Ullah')
+    callback()
+   }
+
+    
+    student(hello)
 </script>
 
 </html>
