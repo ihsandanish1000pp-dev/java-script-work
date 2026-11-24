@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h5>promise 2</h5>
+</body>
+
+
+<script>
+    // let payment = new Promise(function (reslove, reject) {
+    //     let balance = 50000;
+    //     let amount = 5000;
+
+    //     if (balance >= amount) {
+    //         reslove('Withdrw Successfull')
+    //     } else {
+    //         reject('Insufcent Blance')
+    //     }
+    // })
+
+    // payment.then(function (msg) {
+    //     document.write(msg)
+    // })
+
+    // payment.catch(function (error) {
+    //     document.write(error)
+    // })
+
+
+    // let result = new Promise(function (reslove, reject) {
+    //     let marks = 45;
+    //     if (marks >= 50) {
+    //         reslove('congrationls You are Pass');
+    //     } else {
+    //         reject('You are Falied');
+    //     };
+    // })
+
+
+    // result.then(function (msg) {
+    //     document.write(msg);
+    // })
+
+    // result.catch(function (error) {
+    //     document.write(error);
+    // })
+
+
+
+
+
+    // let login = new Promise(function (reslove, reject) {
+    //     let Email = 'IhsanDanihs@11';
+    //     let password = 3344;
+
+    //     if (Email === 'IhsanDanihs@11' && password == 3344) {
+    //         reslove('You are successfull login');
+    //     } else {
+    //         reject('sorry You Email are password Wrong');
+    //     }
+    // })
+
+    // login.then(function (msg) {
+    //     document.write(msg)
+    // })
+
+    // login.catch(function (error) {
+    //     document.write(error);
+    // })
+
+
+
+    let repayment = new Promise(function (reslove, reject) {
+        let balance = 20000;
+        let amount = 4000;
+
+        if (balance >= amount) {
+            reslove('withdra successfull !')
+        }
+        else {
+            reject('insufficent Balance')
+        };
+    })
+
+
+    repayment.then(function (msg) {
+        document.write(msg)
+    })
+
+    repayment.catch(function (error) {
+        document.write(error)
+    });
+</script>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Promise 1</h4>
+</body>
+
+
+
+<script>
+
+    //    let p = newpromise(function(reslove,reject){
+
+    //      let a = 1+2;
+    //      if(a== 3){
+    //         reslove('success')
+    //      }
+    //       else{
+    //          reject('Falid');
+    //       }
+    //    })
+
+    //    document.write(P)
+
+
+
+    //  let p = new Promise(function(reslove,reject){
+    //     let a = 1+2;
+    //     if(a==3){
+    //         reslove('Success ')
+    //     } else{
+    //         reject('Falied');
+    //     }
+    //  })
+
+    //  p.then((msg)=>{
+    //     document.write(msg + 'Promise SuccessFull')
+    //  })
+
+    //  p.catch((error)=>{
+    //     document.write(error + ' Promise Rejected')
+    //  })
+
+
+
+
+
+    // let order = new Promise(function (resolve, reject) {
+
+    //     let success = true;
+
+    //     if (success) {
+    //         resolve('Order Successful!');
+    //     }
+    //     else {
+    //         reject('Order Failed!');
+    //     }
+
+    // });
+
+    // order.then(function (result) {
+    //     console.log(result);
+    // });
+
+    // order.catch(function (error) {
+    //     console.log(error);
+    // });
+
+
+
+    // let order = new Promise(function (reslove, reject) {
+    //     let success = true;
+
+    //     if (success) {
+    //         reslove('')
+    //     }
+    //     else {
+    //         reject('')
+    //     }
+    // })
+
+    // order.then((msg) => {
+    //     document.write(msg + 'promise Accepted')
+    // })
+
+    // order.catch((error) => {
+    //     document.write(error + ' Promise Rejected');
+    // })
+
+
+
+
+
+
+let payment = new Promise(function(resolve, reject) {
+
+    let balance = 5000;
+    let amount = 2000;
+
+    if (balance >= amount) {
+
+        resolve('Payment Successful');
+
+    } else {
+
+        reject('Payment Rejected');
+
+    }
+
+});
+
+
+payment.then((msg) => {
+    document.write(msg);
+});
+
+payment.catch((error) => {
+    document.write(error);
+});
+
+
+
+
+     let a = 20;
+     let b = 30;
+
+     let c = a+b;
+     document.write(c);
