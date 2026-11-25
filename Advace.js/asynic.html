@@ -97,16 +97,44 @@
 
 
 
-    async function Example() {
-        console.log('Hello Ihsan');
-        console.log('Hello Danihs');
-        await new Promise(reslove => setTimeout(reslove,3000))
-        console.log('Hello Kashif');
-        console.log('Hello Ahmad');
+    // async function Example() {
+    //     console.log('Hello Ihsan');
+    //     console.log('Hello Danihs');
+    //     await new Promise(reslove => setTimeout(reslove, 3000))
+    //     console.log('Hello Kashif');
+    //     console.log('Hello Ahmad');
+    // }
+
+
+    // Example()
+
+
+
+
+    async function order() {
+
+        console.log('1. Order Placed');
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('2. Payment Successful');
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('3. Order Packed');
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('4. Order Delivered');
+    }
+    order();
+
+
+
+
+
+    async function name() {
+        console.log('Hello 1');
+        console.log('Hello 2');
+        await new promise(reslove => setTimeout(reslove, 2000))
+        console.log('Hello 3')
     }
 
-
-     Example()
+    name()
 </script>
 
 </html>
