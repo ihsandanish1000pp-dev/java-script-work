@@ -17,99 +17,77 @@
 
 <script>
 
-    // async function show() {
-    //     return ('Hello')
-    // };
+    async function show() {
+        return ('Hello')
+    };
 
-    // console.log(show())
-
-
-
-    // function name() {
-
-    //     console.log('Hello 1');
-    //     console.log('Hello 2');
-    //     await  console.log('Hello 3');
-    //     console.log('Hello 4');
-    // }
-
-
-    // async function name() {
-
-    //     console.log('Hello 1');
-    //     console.log('Hello 2');
-    //     await console.log('Hello 3');
-    //     console.log('Hello 4');
-    // }
-
-    // name();
-
-    // console.log('Heloo 5')
-    // console.log('Hello 6')
+    console.log(show())
 
 
 
+    function name() {
 
-    // async function test() {
-    //     console.log('Hello 1');
-    //     await fetch('https://jsonplaceholder.typicode.com/users');
-    //     console.log('Hello 2');
-    // }
-    // test();
-
-
+        console.log('Hello 1');
+        console.log('Hello 2');
+          console.log('Hello 3');
+        console.log('Hello 4');
+    }
 
 
-    // async function name() {
+    async function name() {
 
-    //     console.log('Hello 1');
-    //     console.log('Hello 2');
+        console.log('Hello 1');
+        console.log('Hello 2');
+        await console.log('Hello 3');
+        console.log('Hello 4');
+    }
 
-    //     await new Promise(resolve => setTimeout(resolve, 4000));
+    name();
 
-    //     console.log('Hello 3');
-    //     console.log('Hello 4');
-    // }
+    console.log('Heloo 5')
+    console.log('Hello 6')
+    
+    async function test() {
+        console.log('Hello 1');
+        await fetch('https://jsonplaceholder.typicode.com/users');
+        console.log('Hello 2');
+    }
+    test();
 
-    // name();
+    async function name() {
 
+        console.log('Hello 1');
+        console.log('Hello 2');
 
+        await new Promise(resolve => setTimeout(resolve, 4000));
 
+        console.log('Hello 3');
+        console.log('Hello 4');
+    }
 
+    name();
 
+    async function Hello() {
+        console.log('Hello 1');
+        console.log('Hello 2');
+        await new Promise(reslove => setTimeout(reslove, 2000))
+        console.log('Hello 3')
+        console.log('Hello 4');
+    }
 
-
-
-
-
-
-    // async function Hello() {
-    //     console.log('Hello 1');
-    //     console.log('Hello 2');
-    //     await new Promise(reslove => setTimeout(reslove, 2000))
-    //     console.log('Hello 3')
-    //     console.log('Hello 4');
-    // }
-
-    // Hello()
-
-
-
-
-
-    // async function Example() {
-    //     console.log('Hello Ihsan');
-    //     console.log('Hello Danihs');
-    //     await new Promise(reslove => setTimeout(reslove, 3000))
-    //     console.log('Hello Kashif');
-    //     console.log('Hello Ahmad');
-    // }
+    Hello()
 
 
-    // Example()
+    async function Example() {
+        console.log('Hello Ihsan');
+        console.log('Hello Danihs');
+        await new Promise(reslove => setTimeout(reslove, 3000))
+        console.log('Hello Kashif');
+        console.log('Hello Ahmad');
+    }
 
 
-
+    Example()
 
     async function order() {
 
@@ -124,17 +102,55 @@
     order();
 
 
-
-
-
     async function name() {
         console.log('Hello 1');
         console.log('Hello 2');
-        await new promise(reslove => setTimeout(reslove, 2000))
-        console.log('Hello 3')
+        await new Promise(resolve => setTimeout(resolve,2000));
+        console.log('Hello 3');
+        console.log('Hello 4')
+    }
+    name()
+
+
+
+    async function order() {
+
+        console.log('1. order Placed');
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        console.log('2. order pindeing');
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        console.log('3. order successFull');
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        console.log('4. thinks for Order ')
+    };
+    order();
+
+
+
+    async function checkingResult() {
+        console.log('1. check student Result...');
+
+        await new Promise(resolve => setTimeout(resolve, 3000));
+
+        console.log('2. student record Found');
+
+        await new Promise(resolve => setTimeout(resolve, 3000));
+
+        console.log('3. calculting Marks');
+
+        await new Promise(resolve => setTimeout(resolve, 3000));
+
+        console.log('4. Your result is Ready');
+
     }
 
-    name()
+    checkingResult()
 </script>
 
 </html>
